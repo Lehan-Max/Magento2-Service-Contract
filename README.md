@@ -20,7 +20,7 @@
               AccountManagementInterface	Defines the createAccount(), changePassword(), activate(), and isEmailAvailable() functions.
               AddressManagementInterface	Defines the validate() function that validates an address.
 
-      3. `Metadata Interface`: It defines the attributes that are applicable for the attribute.
+      3. `Metadata Interface`: It defines the attributes that are applicable for the attribute. It is data about data. 
 
   Magento2 has model resource model, then why we still use service-contract?
     Because using model, Resource model most of the methods are depricated & cannot be used with further versions of magento2. So, service contracts were     introduced to overcome this.
