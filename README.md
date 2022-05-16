@@ -44,6 +44,7 @@ Service-contract implementation is also used for rest Api.
     
  doc block is required because magento code will read the parameter type, return type from the doc block & then provide output.
     
- 
+ ![msc](https://user-images.githubusercontent.com/46992129/168560694-77cc47d1-542b-4501-9881-fc184f7bcf45.jpg)
+
     
  
