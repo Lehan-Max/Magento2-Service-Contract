@@ -1,6 +1,6 @@
 # Magento2-Service-Contract
 
-Magento Service contract is used for creating certain interfaces & repositories, modules so that it can be compatible with any third-party modules.
+`Magento Service contract` is used for creating certain interfaces & repositories, modules so that it can be compatible with any third-party modules.
 It is a design-pattern. It creates a abstraction layer between business logic && outside world.
 
 Service Interfaces:
@@ -8,13 +8,13 @@ Service Interfaces:
   |-----Management Interface
   |-----Metadata Interface
   
-  1. Repository Interface: Any kind of database operations like insert, delete, update are done using repository interface
-  2. Management Interface: Any kind of management related operations.
+  1. `Repository Interface`: Any kind of database operations like insert, delete, update are done using repository interface
+  2. `Management Interface`: Any kind of management related operations.
 
           AccountManagementInterface	Defines the createAccount(), changePassword(), activate(), and isEmailAvailable() functions.
           AddressManagementInterface	Defines the validate() function that validates an address.
           
-  3. Metadata Interface: It defines the attributes that are applicable for the attribute.
+  3. `Metadata Interface`: It defines the attributes that are applicable for the attribute.
 
 Magento2 has model resource model, then why we still use service-contract?
   Because using model, Resource model most of the methods are depricated & cannot be used with further versions of magento2. So, service contracts were introduced to overcome this.
@@ -35,9 +35,9 @@ Service-contract implementation is also used for rest Api.
   Admin user/Integration can acess any information because it has super-privilage
   
  Api Can be accessed in three ways:
-    1. Admin user - admin authentication token - admin can access any data related to any customers/ any data if acl resource is provided fot that admin.
-    2. Customer   - customer authentication token - used to utilize customer based data like unique price of products based on customers, customer cart,                       wishlist etc.
-    3. Integration token - Ex: Mobile app
+    1. `Admin user` - admin authentication token - admin can access any data related to any customers/ any data if acl resource is provided fot that                           admin.
+    2. `Customer`   - customer authentication token - used to utilize customer based data like unique price of products based on customers, customer                           cart, wishlist etc.
+    3. `Integration token` - Ex: Mobile app
     
  To generate integration token : System -> Extensions -> Integrations -> Add New Integration
     here we can provide `Resource Access` based on resource we specify in webapi.xml.
