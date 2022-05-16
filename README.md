@@ -7,9 +7,9 @@
     1. Data Interface
     2. Service Interface
 
-    1. `Data Interface`: Define data interfaces in the Api/Data subdirectory for a module.
+    1. Data Interface: Define data interfaces in the Api/Data subdirectory for a module.
 
-    2. `Service Interfaces`:
+    2. Service Interfaces:
       |-----Repository Interface
       |-----Management Interface
       |-----Metadata Interface
