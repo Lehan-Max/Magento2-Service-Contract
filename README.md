@@ -3,7 +3,13 @@
 `Magento Service contract` is used for creating certain interfaces & repositories, modules so that it can be compatible with any third-party modules.
 It is a design-pattern. It creates a abstraction layer between business logic && outside world.
 
-Service Interfaces:
+Service contract include: 
+1. Data Interface
+2. Service Interface
+
+1. `Data Interface`: Define data interfaces in the Api/Data subdirectory for a module.
+
+2. `Service Interfaces`:
   |-----Repository Interface
   |-----Management Interface
   |-----Metadata Interface
@@ -19,7 +25,7 @@ Service Interfaces:
 Magento2 has model resource model, then why we still use service-contract?
   Because using model, Resource model most of the methods are depricated & cannot be used with further versions of magento2. So, service contracts were introduced to overcome this.
   
-Service-contract implementation is also used for rest Api.
+ Service-contract implementation is also used for rest Api.
 
           <route url="/V1/custom/:categoryId/products" method="GET">
             <service class="Vendor\Module\Api\CategoryLinkManagementInterface" method="getAssignedProducts" />
